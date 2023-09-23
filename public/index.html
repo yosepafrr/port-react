@@ -1,43 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Yosep's Portfolio</title>
+    <link rel="icon" href="%PUBLIC_URL%/zenitsu.ico" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Prettyphoto CSS -->
+    <link rel="stylesheet" href="css/prettyPhoto.css">
+    <!-- Font-Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Owl-Slider CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body data-spy="scroll" data-target=".navbar-default" data-offset="100">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="pre-status">
+            <div class="preload-placeholder"></div>
+        </div>
+    </div>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- Navigation -->
+    <header id="menu">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#menu"><img src="images/Logo/01.png" alt=""></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a class="scroll" href="#menu">Home</a></li>
+                            <li><a class="scroll" href="#about">About</a></li>
+                            <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- Slider Start -->
+    <section id="slider">
+        <div id="home-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active" style="background-image:url(images/Slider/02.png)">
+                    <div class="carousel-caption container">
+                        <div class="row">
+                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                <h1>Portfolio</h1>
+                                <h2>Yosep Adriana Fauzi Ramdani</h2>
+                                <p>Sebuah page portfolio singkat mengenai diri saya sendiri</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Slider End -->
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <!-- About Section Start -->
+    <section id="about">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="heading">
+                    <h2>ABOUT <span>ME</span></h2>
+                    <div class="line"></div>
+                    <p><span><strong>HI!</strong></span> Nama saya Yosep Adriana Fauzi Ramdani, saya adalah seorang mahasiswa
+                        jurusan Informatika di Universitas Siliwangi. Tahun ini adalah tahun kedua saya di Informatika
+                        Universitas Siliwangi.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 ab-sec">
+                    <div class="col-md-6">
+                        <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms"><span>B</span>ackground
+                        </h3>
+                        <p><span><strong>S</strong></span>aya lahir pada 14 Maret 2004 di Kota Tasikmalaya, menempuh
+                            pendidikan di SDN Karangsambung 1, kemudian dilanjutkan di MTS Al-Khoeriyah dan kemudian
+                            melanjutkan SMA di SMAN 3 Tasikmalaya.</p>
+                    </div>
+                    <div class="col-md-6 ab-sec-img wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms"><img
+                                src="images/Aboutus/01.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Contact Section Start -->
+    <section>
+      <div class="row"> 
+      <div class="container">
+        <div class="col-md-12 ab-sec">
+          <div class="col-md-7">
+            <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms"><span>Contact </span>Me</h3>
+            <p><span> <ul>
+              <li>
+                Email : yosepadrianafauziramdani@gmail.com
+              </li>
+              <li>
+                Whatsapp / Telpon : 082130071701
+              </li>
+              <li>
+                Instagram : _yosepafr
+              </li>
+              <li>
+                Git : yosepafrr
+              </li>
+            </ul></p>
+          </div>
+          <div class="col-md-6 ab-sec-img wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms"><img src="images/Aboutus/01.jpg" alt=""> </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </section>
+          <!-- Contact Section End -->
+
+    <!-- Portfolio Section Start -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="heading">
+                    <div class="card shadow-sm" style="display: grid; grid-template-columns: auto 1fr;">
+                        <img src="https://down-aka-id.img.susercontent.com/60a86bbea07f3264042dcbb319fb9e3b_tn" alt=""
+                            class="bd-placeholder-img card-img-top" width="200" height="200"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                            focusable="false" style="margin-right: 20px;">
+                        <div class="card-body">
+                            <p class="card-text" style="text-align: justify;">
+                                Saya mempunyai sebuah bisnis kecil-kecilan yang saat ini bergerak di
+                                bidang fashion, dan saya memasarkan produk saya di salah satu e-commerce terbesar di
+                                Indonesia.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      <!-- Portfolio Section End -->
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.isotope.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+</body>
 </html>
